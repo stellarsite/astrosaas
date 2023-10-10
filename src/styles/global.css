@@ -6,3 +6,9 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+
+h1, h2, h3, h4, h5, h6, span, p, a, li, button, input, textarea, label, option, 
+select, legend, caption, strong, em, code, pre, blockquote, th, td, 
+article, aside, figcaption, footer, header, nav, section {
+  font-family: 'Manrope', sans-serif;
+}

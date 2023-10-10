@@ -9,6 +9,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 // import Pricing from "../components/landing/Pricing.astro";
 // import Cta from "../components/global/Cta.astro";
 // import Footer from "../components/global/Footer.astro";
+
+
 import { AstroSeo } from "@astrolib/seo";
 ---
 
@@ -43,13 +45,10 @@ Use AstroSeo in all the pages you want different Seo than the index page
     <form name="email-list" method="POST" data-netlify="true" class="w-full max-w-md mt-5" netlify>
       <input type="hidden" name="form-name" value="email-list" />
       <div class="flex flex-wrap -mx-3 items-center">
-        <div class="flex-1 px-3">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
-            Email Address
-          </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" name="email" type="email" placeholder="your-email@example.com" required>
+        <div class="flex-1 px-1">
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border py-2 px-4 leading-tight focus:outline-none focus:bg-white" id="email" name="email" type="email" placeholder="your-email@example.com" required>
         </div>
-        <button type="submit" class="bg-red hover:bg-black transition-all text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Subscribe</button>
+        <button type="submit" class="bg-red hover:bg-black transition-all text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline">Subscribe</button>
       </div>
     </form>
     
