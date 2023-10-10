@@ -1,14 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Navigation from "../components/global/Navigation.astro";
+// import Navigation from "../components/global/Navigation.astro";
 
-import Hero from "../components/landing/Hero.astro";
-import SectionOne from "../components/landing/SectionOne.astro";
-import SectionTwo from "../components/landing/SectionTwo.astro";
-import Testimonial from "../components/global/Testimonial.astro";
-import Pricing from "../components/landing/Pricing.astro";
-import Cta from "../components/global/Cta.astro";
-import Footer from "../components/global/Footer.astro";
+// import Hero from "../components/landing/Hero.astro";
+// import SectionOne from "../components/landing/SectionOne.astro";
+// import SectionTwo from "../components/landing/SectionTwo.astro";
+// import Testimonial from "../components/global/Testimonial.astro";
+// import Pricing from "../components/landing/Pricing.astro";
+// import Cta from "../components/global/Cta.astro";
+// import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
 
@@ -16,47 +16,42 @@ import { AstroSeo } from "@astrolib/seo";
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Home"
-  description="Your site description goes here"
-  canonical="https://www.michaelandreuzza.com"
+  title="CASBO - Canadian Sale By Owner"
+  description="Empower your real estate brokerage with CASBO, a new income stream that connects Canadian brokerages with private home sellers."
+  canonical="https://www.casbo.ca"
   openGraph={{
-    url: "https://www.michaelandreuzza.com",
-    title: "Open Graph Title",
-    description: "Open Graph Description",
-    images: [
-      {
-        url: "https://www.michaelandreuzza.com/opengraph/social-og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Social open graph",
-        type: "image/jpeg",
-      },
-      {
-        url: "https://www.michaelandreuzza.com/opengraph/twitter-og.jpg",
-        width: 4096,
-        height: 4096,
-        alt: "Twitter open graph",
-        type: "image/jpeg",
-      },
-      { url: "https://www.michaelandreuzza.com/opengraph/social-og.jpg" },
-      { url: "https://www.michaelandreuzza.com/opengraph/twitter-og.jpg" },
-    ],
-    site_name: "YourSitesName",
+    url: "https://www.casbo.ca",
+    title: "CASBO - A New Revenue Stream for Canadian Real Estate Brokerages",
+    description: "Unlock enhanced revenue opportunities for Canadian brokerages, offering streamlined private home listing services on top real estate markets.",
+    site_name: "CASBO - Canadian Sale by Owner",
   }}
-  twitter={{
-    handle: "@Mike_Andreuzza",
-    site: "@site",
-    cardType: "summary_large_image",
-  }}
-/>
-<BaseLayout>
-  <Navigation />
-  <Hero />
 
-  <SectionOne />
-  <SectionTwo />
-  <Testimonial />
-  <Pricing />
-  <Cta />
-  <Footer />
+/>
+
+<BaseLayout>
+  <div class="flex flex-col items-center justify-center h-screen w-full">
+    <svg width="180" height="142" viewBox="0 0 180 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80.6996 118.566L77.9998 96.1508V94.1783C77.9998 91.7139 79.5989 89.5346 81.9498 88.7953C83.5992 88.2766 85.3653 88.257 87.0259 88.7391L88.2882 89.1055C90.3656 89.7086 92.587 89.5813 94.5819 88.7448C95.7543 88.2532 97.0163 87.9845 98.2782 88.1375C99.9318 88.3379 102.228 88.83 103.378 90.0376C105.121 91.8682 104.998 96.1508 104.998 96.1508L103.378 118.566H98.5183L96.3585 142H87.7191L84.4793 118.566H80.6996Z" fill="black"/>
+      <path d="M16.2848 51.9984H-0.000244141L89.6586 -0.000183105L179.5 51.9984H161.303L156.617 91.1693L154.273 114.346L153.906 117.824L153.995 117.898L153.896 117.917L151.93 136.522L99.9998 128L153.896 117.917L153.906 117.824L143.21 108.96L156.617 91.1693L135.042 89.5878L139.042 75.7847L109 86.768L122.705 46.268L103.958 51.9984L89.0698 23.8238L79.1446 51.9984L57.6399 48.1781L73.9998 86.768L44.9577 76.8302L47.7147 90.6787H24.2801L40.5465 110.258L28.7521 117.898L83.9998 128L32.2755 136.522L28.7521 117.898L24.2801 94.2602L16.2848 51.9984Z" fill="#C43B3B"/>
+      <ellipse cx="90.4998" cy="78.9998" rx="8.5" ry="9" fill="black"/>
+    </svg>
+    <h1 class="text-6xl font-bold">CASBO</h1>
+    <h2 class="text-lg mb-3 font-medium">Canadian Sale By Owner</h2>
+    <p class="max-w-md text-center">A new revenue stream for Canadian real estate brokerages. Generate additional income by offering listing services to private home sellers.</p>
+    <p class="mt-4 font-bold">Stay updated on CASBO’s launch - sign up below!</p>
+    
+    <form name="email-list" method="POST" data-netlify="true" class="w-full max-w-md mt-5">
+      <input type="hidden" name="form-name" value="email-list" />
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+            Email Address
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" name="email" type="email" placeholder="your-email@example.com" required>
+        </div>
+      </div>
+      <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Subscribe</button>
+    </form>
+  </div>
+  
 </BaseLayout>
